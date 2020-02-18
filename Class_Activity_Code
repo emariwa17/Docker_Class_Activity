@@ -1,0 +1,4 @@
+PS C:\Users\user> git clone https://github.com/emariwa17/Bulletin-Board.git 
+PS C:\Users\user> cd node-bulletin-board/bulletin-board-app
+PS C:\Users\user\node-bulletin-board\bulletin-board-app> docker image build -t bulletinboard:1.0 . 
+PS C:\Users\user\node-bulletin-board\bulletin-board-app> docker container run --publish 8000:8080 --detach --name bb bulletinboard:1.0
